@@ -2,7 +2,13 @@
     <div class="container ">
         <div class="row justify-content-center">
             <div class="col-md-6 text-center mb-5">
-                <h2 class=" heading-section text-white">Contact</h2>
+                <div class="">
+
+                </div>
+                <h1 class=" heading-section text-white">
+                     <span class="p-1" style="background-color: rgba(0, 0, 0, 0.055); border-radius:15px">@lang("public.contact")</span>
+
+                    </h1>
             </div>
         </div>
         <div class="row justify-content-center">

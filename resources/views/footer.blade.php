@@ -1,6 +1,6 @@
 <footer>
     <div class="pb-5 container-fluid">
-        <div class="row  ">
+        <div class="row mx-5  ">
             <div class="col-lg-3 col-md-6">
                 <div class="text-start">
                     <a href="#" class="logo">
@@ -13,7 +13,7 @@
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="text-white text-center">
-                    <h4>@lang('public.contact')</h4>
+                    <h4>Contact</h4>
                     <p>
                         <i class="fas fa-envelope"></i>
                         info@plaafricalaw.com
@@ -28,7 +28,7 @@
                 <div class="text-white text-end me-2">
                     <h4> @lang('public.partners')</h4>
                     <a class="d-block" href="https://lexafrica.com/" target="_blank" rel="">
-                        <img style="width: 100px" src="{{url('storage/partenaire/p1.png')}}" alt="">
+                        <img style="width: 100px" src="assets/partenaire/p1.png" alt="">
                     </a>
 
                 </div>

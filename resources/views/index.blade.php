@@ -160,7 +160,7 @@
                                 <h2>@lang('public.about us')</h2>
                                 <h1>PLA Law Firm
                                 </h1>
-                                <div class="row">
+                                <div class="row mb-4">
                                     <div class="col-sm-12">
                                         <p>
                                             @lang('public.about-p1')
@@ -171,7 +171,8 @@
                                         </p>
                                     </div>
                                     <div class="col-sm-12">
-                                        <a href="{{route('buania.about')}}" class="btn text-with">@lang('public.read more')</a>
+                                        <a href="{{route('buania.about')}}"
+                                        class="btn text-with">@lang('public.read more')</a>
                                     </div>
                                 </div>
 

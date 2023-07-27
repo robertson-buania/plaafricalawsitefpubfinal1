@@ -70,7 +70,9 @@ return [
      "name"=>"Nom",
      "subject"=>"Objet",
      "years"=>"Ans",
-     "contact"=>"Entrons en contact"
+     "contact"=>"Écrivez-nous",
+     "more then"=>"Plus de",
+     "of"=>"de"
 
 ];
 

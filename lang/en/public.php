@@ -61,7 +61,10 @@ return [
      "address"=>"Address",
      "name"=>"Name",
      "subject"=>"Subject",
-     "years"=>"Years"
+     "years"=>"Year",
+     "contact"=>"Send a message",
+     "more then"=>"More than",
+     "of"=>"Of"
 
 ];
 
