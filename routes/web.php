@@ -1,11 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+/*
+https://admin.plaafricalaw.com/
+
+*/
 
 Route::get('/cv/{pdfUrl}', function ($pdfUrl) {
     // Récupérez le contenu du fichier PDF à partir de l'URL
-
-    $pdfContent = file_get_contents("http://localhost:8100/assets/img/avocats/".$pdfUrl);
+    $apiExterne = env('API_EXTERNE_HOST');
+    $pdfContent = file_get_contents($apiExterne."assets/img/avocats/".$pdfUrl);
 
     // Créez une réponse de téléchargement
     $response = Response::make($pdfContent, 200, [
@@ -18,8 +22,8 @@ Route::get('/cv/{pdfUrl}', function ($pdfUrl) {
 
 Route::get('/publication/{pdfUrl}', function ($pdfUrl) {
     // Récupérez le contenu du fichier PDF à partir de l'URL
-
-    $pdfContent = file_get_contents("http://localhost:8100/assets/img/publications/".$pdfUrl);
+    $apiExterne = env('API_EXTERNE_HOST');
+    $pdfContent = file_get_contents($apiExterne."/assets/img/publications/".$pdfUrl);
 
     // Créez une réponse de téléchargement
     $response = Response::make($pdfContent, 200, [

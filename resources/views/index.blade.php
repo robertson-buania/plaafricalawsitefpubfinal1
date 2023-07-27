@@ -16,7 +16,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="storage/slides/1649335560.1644331708.agriculture.png" alt="">
+                        <img src="assets/slides/1649335560.1644331708.agriculture.png" alt="">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="storage/slides/1649335612.1644385541.mine%20et%20hydrocarbure%202.webp" alt="">
+                        <img src="assets/slides/1649335612.1644385541.mine%20et%20hydrocarbure%202.webp" alt="">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="storage/slides/1649335649.1644386774.Infrastructures%201.webp" alt="">
+                        <img src="assets/slides/1649335649.1644386774.Infrastructures%201.webp" alt="">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="storage/slides/1649335698.1644391214.Banques%20finance%20et%20assurance.png" alt="">
+                        <img src="assets/slides/1649335698.1644391214.Banques%20finance%20et%20assurance.png" alt="">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="storage/slides/1649335748.1644395887.contentieux-et-arbitrage-2.png" alt="">
+                        <img src="assets/slides/1649335748.1644395887.contentieux-et-arbitrage-2.png" alt="">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -145,14 +145,14 @@
 
             </div>
         </div>
-        <div class="about">
+        <div class="about  ">
             <div class="d-flex justify-content-center align-items-center">
                 <div class="container">
                     <div class="d-flex justify-content-center align-items-center  ">
                         <div class="row g-3 g-sm-5 g-lg-0">
                             <div class="col-lg-6 col-sm-6">
                                 <div class=" new-card">
-                                    <img src="storage/about/DSC_7803.jpg" alt="img">
+                                    <img src="assets/about/DSC_7803.jpg" alt="img">
 
                                 </div>
                             </div>
