@@ -9,10 +9,6 @@ use Illuminate\Support\Facades\Http;
 class BuaniaController extends Controller
 {
 
-
-
-
-
     function contact(Request $request)  {
         $apiExterne = env('API_EXTERNE_HOST').''.'api/';
         $contact=[
@@ -75,23 +71,29 @@ class BuaniaController extends Controller
     }
 
     function expertise()  {
-        $apiExterne = env('API_EXTERNE_HOST').''.'api/';
-        $url_fichier_expertise=env('API_EXTERNE_HOST').'assets/img/expertises/';
+        try {
+            $apiExterne = env('API_EXTERNE_HOST').''.'api/';
+            $url_fichier_expertise=env('API_EXTERNE_HOST').'assets/img/expertises/';
 
-        $response = Http::get($apiExterne.'expertise');
+            $response = Http::get($apiExterne.'expertise');
 
-       // dd($response);
-        $accueil_data = $response->json();
-        $currentLocale = App::getLocale();
+           // dd($response);
+            $accueil_data = $response->json();
+            $currentLocale = App::getLocale();
 
-       // dd($accueil_data);
-        return view('expertise', [
-            "currentLocale"=>$currentLocale,
-            "expertisesDomainecompetence"=>$accueil_data["expertisesDomainecompetence"],
-            "expertisesSecteuractivite"=>$accueil_data["expertisesSecteuractivite"],
-            "url_fichier_expertise"=>$url_fichier_expertise,
-            ]
-        );
+           // dd($accueil_data);
+            return view('expertise', [
+                "currentLocale"=>$currentLocale,
+                "expertisesDomainecompetence"=>$accueil_data["expertisesDomainecompetence"],
+                "expertisesSecteuractivite"=>$accueil_data["expertisesSecteuractivite"],
+                "url_fichier_expertise"=>$url_fichier_expertise,
+                ]
+            );
+
+        } catch (\Throwable $th) {
+            return redirect()->back();
+        }
+
 
     }
 

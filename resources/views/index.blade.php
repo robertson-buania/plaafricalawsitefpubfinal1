@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="assets/slides/1649335612.1644385541.mine%20et%20hydrocarbure%202.webp" alt="">
+                        <img src="assets/slides/1649335612.1644385541.mine et hydrocarbure 2.jpg" alt="">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="assets/slides/1649335649.1644386774.Infrastructures%201.webp" alt="">
+                        <img src="assets/slides/1649335649.1644386774.Infrastructures 1.jpg" alt="">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="assets/slides/1649335698.1644391214.Banques%20finance%20et%20assurance.png" alt="">
+                        <img src="assets/slides/1649335698.1644391214.Banques finance et assurance.png" alt="">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">

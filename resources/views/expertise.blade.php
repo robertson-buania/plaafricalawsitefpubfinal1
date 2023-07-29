@@ -56,30 +56,30 @@
 
                     <div class="row g-5 g-lg-5 color-1 ">
                         @if ($expertisesDomainecompetence)
-                        @foreach ($expertisesDomainecompetence as $competenceIndice =>$competence )
-                        <div class="col-lg-6 col-md-6 col-6">
-                            <a href="{{route('expertise.detail',$competence['id'])}}">
-                                <div class="card">
-                                    <div class="num">{{$competenceIndice+1}}</div>
-                                    <img src="{{$url_fichier_expertise.''.$competence["photo"]}}" alt="">
-                                    <div class="content-text">
-                                        <h5 class="mb-0">
-                                            @if ($currentLocale=="fr")
-                                            {{$competence['titre_fr']}}
-                                        @endif
+                            @foreach ($expertisesDomainecompetence as $competenceIndice =>$competence )
+                                <div class="col-lg-6 col-md-6 col-6">
+                                    <a href="{{route('expertise.detail',$competence['id'])}}">
+                                        <div class="card">
+                                            <div class="num">{{$competenceIndice+1}}</div>
+                                            <img src="{{$url_fichier_expertise.''.$competence["photo"]}}" alt="">
+                                            <div class="content-text">
+                                                <h5 class="mb-0">
+                                                    @if ($currentLocale=="fr")
+                                                    {{$competence['titre_fr']}}
+                                                @endif
 
-                                        @if ($currentLocale=="en")
-                                            {{$competence['titre_en']}}
-                                        @endif
-                                        </h5>
-                                        <span class="icon">
-                                            <i class="fas fa-angle-right"></i>
-                                        </span>
-                                    </div>
+                                                @if ($currentLocale=="en")
+                                                    {{$competence['titre_en']}}
+                                                @endif
+                                                </h5>
+                                                <span class="icon">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                    @endforeach
+                            @endforeach
 
                         @endif
 
