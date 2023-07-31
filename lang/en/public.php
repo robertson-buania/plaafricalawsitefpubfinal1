@@ -64,7 +64,8 @@ return [
      "years"=>"Year",
      "contact"=>"Send a message",
      "more then"=>"More than",
-     "of"=>"Of"
+     "of"=>"Of",
+     "desk"=>"Presence"
 
 ];
 

@@ -4,7 +4,7 @@
 <div class="wrapper">
 
     <div class="banner-sm">
-        <img src="../assets/images/img6.webp" alt="">
+        <img src="../assets/images/img6.jpg" alt="">
     </div>
     <div class="block_3" style="padding: 50px 0;">
         <div class="container">

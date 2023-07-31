@@ -72,7 +72,8 @@ return [
      "years"=>"Ans",
      "contact"=>"Écrivez-nous",
      "more then"=>"Plus de",
-     "of"=>"de"
+     "of"=>"de",
+     "desk"=>"Presence"
 
 ];
 

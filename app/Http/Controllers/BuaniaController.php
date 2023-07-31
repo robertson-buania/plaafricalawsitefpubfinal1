@@ -91,7 +91,14 @@ class BuaniaController extends Controller
             );
 
         } catch (\Throwable $th) {
-            return redirect()->back();
+            $currentLocale = App::getLocale();
+            return view('expertise', [
+                "currentLocale"=>$currentLocale,
+                "expertisesDomainecompetence"=>[],
+                "expertisesSecteuractivite"=>[],
+                "url_fichier_expertise"=>"",
+                ]
+            );
         }
 
 

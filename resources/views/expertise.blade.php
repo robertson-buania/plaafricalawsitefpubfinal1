@@ -14,7 +14,7 @@
             <div class="d-flex experti justify-content-between align-items-center  " >
                 <div class="col-lg-6 card-buania   expertise-1">
 
-                    <div class="text-star ">
+                    <div class="text-start ">
                         <h1 class="">@lang("public.industry")</h1>
                     </div>
 
@@ -50,11 +50,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 card-buania  expertise-1">
-                    <div class="text-star">
+                    <div class="text-start">
                         <h1>@lang('public.practise areas')</h1>
                     </div>
 
-                    <div class="row g-5 g-lg-5 color-1 ">
+                    <div class="row g-3 g-lg-4 color-1 ">
                         @if ($expertisesDomainecompetence)
                             @foreach ($expertisesDomainecompetence as $competenceIndice =>$competence )
                                 <div class="col-lg-6 col-md-6 col-6">
