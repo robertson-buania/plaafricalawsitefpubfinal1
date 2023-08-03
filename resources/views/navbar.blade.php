@@ -59,7 +59,7 @@
         </div>
 
         <div class="container-fluid  ">
-            <a class="navbar-brand buania-navbar-img" href="{{route('buania.home')}}">
+            <a id="buania-navbar-img" class="navbar-brand buania-navbar-img" href="{{route('buania.home')}}">
                 <img src="{{url('assets/images/PLA%20logo.png')}}" alt="img">
             </a>
 

@@ -59,7 +59,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="container">
+                        <div class="container mb-5">
                             <h3>
                                 @lang('public.about us')
                             </h3>

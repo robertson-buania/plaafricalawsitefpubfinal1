@@ -88,20 +88,27 @@ echo $homepage;
 
             elementlo.addEventListener('click', function() {
                  elemen = document.getElementById('closeClick');
+                 elemenIm = document.getElementById('buania-navbar-img');
+                 var navbarMenu = document.getElementById('navbarSupportedContent');
+                navbarMenu.style.backgroundColor ='white';
                 elementlo.style.display = 'none';
+                elemenIm.style.display = 'none';
                 elemen.style.display = 'block';
             });
 
 
-            closeClick.addEventListener('click', function() {
-
-            });
 
             function closeClick() {
                 var eltmenu = document.getElementById('menu-buania');
+                elemenIm = document.getElementById('buania-navbar-img');
+
+
                 var navbarMenu = document.getElementById('navbarSupportedContent');
+                navbarMenu.style.backgroundColor ='white';
                 navbarMenu.classList.remove('show');
+
                 eltmenu.style.display = 'block';
+                elemenIm.style.display = 'block';
             }
 
     </script>
