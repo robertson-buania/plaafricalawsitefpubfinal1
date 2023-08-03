@@ -145,18 +145,18 @@
 
             </div>
         </div>
-        <div class="about  ">
+        <div class="about  about-sm">
             <div class="d-flex justify-content-center align-items-center">
                 <div class="container">
                     <div class="d-flex justify-content-center align-items-center  ">
                         <div class="row g-3 g-sm-5 g-lg-0">
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-6 col-md-12 col-sm-6">
                                 <div class=" new-card">
                                     <img src="assets/about/DSC_7803.jpg" alt="img">
 
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6 col-bar">
+                            <div class="about-text col-lg-6 col-md-12 col-sm-6 col-bar">
                                 <h2>@lang('public.about us')</h2>
                                 <h1>PLA Law Firm
                                 </h1>

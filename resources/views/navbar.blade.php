@@ -51,17 +51,17 @@
         </div>
     </div>
     <nav class="navbar navbar-expand-lg">
-        <div class="menu-toggle">
+        <div class="menu-toggle" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{{route('buania.home')}}">
+        <div class="container-fluid bunia-navbar">
+            <a class="navbar-brand bunia-navbar-img" href="{{route('buania.home')}}">
                 <img src="{{url('assets/images/PLA%20logo.png')}}" alt="img">
             </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-lg-0">
+            <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+                <ul class=" close-menu navbar-nav ms-auto mb-lg-0">
 
                     <li class="nav-item">
                         <a class="nav-link  me-4 {{ request()->routeIs('buania.home') ? 'active' : '' }}  " aria-current="page" href="{{route('buania.home')}}">@lang('public.home')</a>

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{url('assets/css/select2/select2.min.css')}}">
     <link rel="stylesheet" type="text/css" href="js/parsley/parsley.css')}}">
     <link href="{{url('js/sweetalert/sweetalert.css')}}" rel="stylesheet">
-    <link href="{{url('css/summernote/summernote.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.css" integrity="sha512-ngQ4IGzHQ3s/Hh8kMyG4FC74wzitukRMIcTOoKT3EyzFZCILOPF0twiXOQn75eDINUfKBYmzYn2AA8DkAk8veQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="{{url('assets/css/read-more.css')}}" rel="stylesheet">
     <link href="{{url('assets/css/aos.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{url('assets/css/style.css')}}">
@@ -63,14 +63,12 @@ echo $homepage;
     </div>
     <script src="{{url('assets/js/app.js')}}"></script>
     <script src="{{url('assets/js/bootstrap.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{{url('assets/js/select2/select2.full.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="{{url('js/sweetalert/sweetalert.min.js')}}"></script>
-    <script src="{{url('js/parsley/js/parsley.js')}}"></script>
-    <script src="{{url('js/parsley/i18n/fr.js')}}"></script>
-
-    <script src="{{url('js/summernote/summernote.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote.min.js" integrity="sha512-6rE6Bx6fCBpRXG/FWpQmvguMWDLWMQjPycXMr35Zx/HRD9nwySZswkkLksgyQcvrpYMx0FELLJVBvWFtubZhDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="{{url('assets/js/aos.js')}}"></script>
     <script src="{{url('assets/js/glightbox.min.js')}}"></script>
@@ -99,12 +97,17 @@ echo $homepage;
             , allowClear: true
         });
         $('.menu-toggle').click(function() {
+            $('.menu-toggle').css('display','block')
             $(this).toggleClass('active')
             $('.full-menu').addClass('active')
+            $(this).removeClass('menu-toggle')
+            $(this).addClass('close-menu')
+
         })
         $('.close-menu').click(function() {
-            $('.menu-toggle').removeClass('active')
             $('.full-menu').removeClass('active')
+            $(this).removeClass('close-menu')
+            $(this).addClass('menu-toggle')
         })
         $(window).on('load', function() {
             $('.loading').addClass('complete');
