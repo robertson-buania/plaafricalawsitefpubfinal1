@@ -61,7 +61,7 @@
                 <img src="{{url('assets/images/PLA%20logo.png')}}" alt="img">
             </a>
             <div class="collapse  navbar-collapse" id="navbarSupportedContent">
-                <ul class=" close-menu navbar-nav ms-auto mb-lg-0">
+                <ul  id="menu-toggle" class=" close-menu navbar-nav ms-auto mb-lg-0">
 
                     <li class="nav-item">
                         <a class="nav-link  me-4 {{ request()->routeIs('buania.home') ? 'active' : '' }}  " aria-current="page" href="{{route('buania.home')}}">@lang('public.home')</a>

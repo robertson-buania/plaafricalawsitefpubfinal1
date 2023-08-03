@@ -96,6 +96,11 @@ echo $homepage;
             placeholder: "Recherche"
             , allowClear: true
         });
+
+        $('#menu-toggle').on('click', function() {
+            $('#navbarSupportedContent').attr('aria-expanded', 'false');
+        });
+
         $('.menu-toggle').click(function() {
             $('.menu-toggle').css('display','block')
             $(this).toggleClass('active')
@@ -103,7 +108,17 @@ echo $homepage;
             $(this).removeClass('menu-toggle')
             $(this).addClass('close-menu')
 
+            alert("je suis là")
+            console.log('Tout va bien');
+
+
+
         })
+
+        $('#menu-toggle a').on('click', function() {
+            $('#navbarSupportedContent').dropdown('toggle');
+        });
+
         $('.close-menu').click(function() {
             $('.full-menu').removeClass('active')
             $(this).removeClass('close-menu')

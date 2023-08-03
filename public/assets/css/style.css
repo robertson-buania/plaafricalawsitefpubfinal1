@@ -3139,7 +3139,7 @@ color: var(--primaryColor);
         font-size: 19px;
     }
     .bunia-navbar {
-        background-color: rgba(255, 255, 255, 0.678);
+        background-color: rgb(255, 255, 255);
         color: #000000;
         padding-right: 50px !important;
         margin-right: 70px !important;
