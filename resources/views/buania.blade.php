@@ -11,6 +11,7 @@
     <title>
         @yield("plaafricalaw-title")
     </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link rel="shortcut icon" href="{{url('assets/images/PlaLogo.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{url('assets/css/bootstrap.min.css')}}">
     <link rel=" stylesheet" href="{{url('assets/font/css/all.min.css')}}">
@@ -61,6 +62,8 @@ echo $homepage;
             </p>
         </div>
     </div>
+
+
     <script src="{{url('assets/js/app.js')}}"></script>
     <script src="{{url('assets/js/bootstrap.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -77,6 +80,31 @@ echo $homepage;
     <script src="{{url('assets/js/scriptcarousel.js')}}"></script>
     <script async src='https://stackwhats.com/pixel/4958f4367609133da9d63d60b8f3ca'></script>
 
+    <script>
+
+
+
+        var elementlo = document.getElementById('menu-buania');
+
+            elementlo.addEventListener('click', function() {
+                 elemen = document.getElementById('closeClick');
+                elementlo.style.display = 'none';
+                elemen.style.display = 'block';
+            });
+
+
+            closeClick.addEventListener('click', function() {
+
+            });
+
+            function closeClick() {
+                var eltmenu = document.getElementById('menu-buania');
+                var navbarMenu = document.getElementById('navbarSupportedContent');
+                navbarMenu.classList.remove('show');
+                eltmenu.style.display = 'block';
+            }
+
+    </script>
 
     <script>
 
@@ -97,7 +125,7 @@ echo $homepage;
             , allowClear: true
         });
 
-        $('#menu-toggle').on('click', function() {
+        $('#menu-toggle li').on('click', function() {
             $('#navbarSupportedContent').attr('aria-expanded', 'false');
         });
 
@@ -107,9 +135,6 @@ echo $homepage;
             $('.full-menu').addClass('active')
             $(this).removeClass('menu-toggle')
             $(this).addClass('close-menu')
-
-            alert("je suis là")
-            console.log('Tout va bien');
 
 
 

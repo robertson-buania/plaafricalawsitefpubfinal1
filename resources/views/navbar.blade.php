@@ -2,11 +2,11 @@
     <div class="topbar">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-8 col-md-4">
+                <div class="col-lg-4  col-1 col-md-1">
                     <div class="d-flex net-work"></div>
                 </div>
-                <div class="col-lg-8 col-4 col-md-8">
-                    <div class="d-flex contact-info justify-content-end">
+                <div class="col-lg-8 col-11 col-md-12">
+                    <div class="d-flex  justify-content-end">
 
                         <p class="mb-0">
                             <i class="fas fa-envelope"></i>
@@ -50,24 +50,30 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg">
-        <div class="menu-toggle" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+    <nav   class="navbar navbar-expand-lg">
+        <div id="menu-buania" class="menu-toggle"
+         data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <div class="container-fluid bunia-navbar">
-            <a class="navbar-brand bunia-navbar-img" href="{{route('buania.home')}}">
+
+        <div class="container-fluid  ">
+            <a class="navbar-brand buania-navbar-img" href="{{route('buania.home')}}">
                 <img src="{{url('assets/images/PLA%20logo.png')}}" alt="img">
             </a>
-            <div class="collapse  navbar-collapse" id="navbarSupportedContent">
-                <ul  id="menu-toggle" class=" close-menu navbar-nav ms-auto mb-lg-0">
+
+            <div class="collapse buania-navbar  navbar-collapse" id="navbarSupportedContent">
+                <div style="display: none !important" onclick="closeClick()" id="closeClick" class="d-flex justify-content-end align-items-end ">
+                    <i style="font-size: 2rem" class="buania-color bi bi-x-circle"></i>
+                </div>
+                <ul   id="menu-toggle" class=" close-menu navbar-nav ms-auto mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link  me-4 {{ request()->routeIs('buania.home') ? 'active' : '' }}  " aria-current="page" href="{{route('buania.home')}}">@lang('public.home')</a>
+                        <a onclick="closeClick()" class="nav-link  me-4 {{ request()->routeIs('buania.home') ? 'active' : '' }}  " aria-current="page" href="{{route('buania.home')}}">@lang('public.home')</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  me-4 {{ request()->routeIs('buania.about') ? 'active' : '' }}" href="{{route('buania.about')}}">
+                        <a onclick="closeClick()" class="nav-link  me-4 {{ request()->routeIs('buania.about') ? 'active' : '' }}" href="{{route('buania.about')}}">
                             @lang('public.about us')
                         </a>
                     </li>
@@ -87,7 +93,7 @@
                                                         @foreach ($accueil_data['expertisesSecteuractivite'] as $activite )
 
                                                         <li>
-                                                            <a href="{{route('expertise.detail',$activite['id'])}}">
+                                                            <a onclick="closeClick()" href="{{route('expertise.detail',$activite['id'])}}">
                                                                 @if ($currentLocale=="fr")
                                                                 {{$activite['titre_fr']}}
                                                                 @endif
@@ -118,7 +124,7 @@
                                                         @foreach ($accueil_data['expertisesDomainecompetence'] as $competence )
 
                                                         <li>
-                                                            <a href="{{route('expertise.detail',$competence['id'])}}">
+                                                            <a onclick="closeClick()" href="{{route('expertise.detail',$competence['id'])}}">
                                                                 @if ($currentLocale=="fr")
                                                                 {{$competence['titre_fr']}}
                                                                 @endif
@@ -142,16 +148,17 @@
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link  me-4 {{ request()->routeIs('buania.team') ? 'active' : '' }}" href="{{route('buania.team')}}">@lang('public.team')</a>
+                        <a onclick="closeClick()" class="nav-link  me-4 {{ request()->routeIs('buania.team') ? 'active' : '' }}" href="{{route('buania.team')}}">@lang('public.team')</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  me-4 {{ request()->routeIs('buania.presence') ? 'active' : '' }}" href="{{route('buania.presence')}}">@lang('public.presence')</a>
+                        <a onclick="closeClick()" class="nav-link  me-4 {{ request()->routeIs('buania.presence') ? 'active' : '' }}" href="{{route('buania.presence')}}">@lang('public.presence')</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('buania.publication') ? 'active' : '' }} " href="{{route('buania.publication')}}">@lang('public.publication')</a>
+                        <a onclick="closeClick()" class="nav-link {{ request()->routeIs('buania.publication') ? 'active' : '' }} " href="{{route('buania.publication')}}">@lang('public.publication')</a>
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
 </header>

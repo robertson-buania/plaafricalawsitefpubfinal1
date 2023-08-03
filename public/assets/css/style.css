@@ -2588,6 +2588,9 @@ footer p .fas{
     display: inline-block;
     transition: .5s;
 }
+#closeClick{
+    display: none;
+}
 .block_9 .select2-selection{
     height: 45px;
     background: transparent;
@@ -3014,6 +3017,13 @@ color: var(--primaryColor);
 .block-hidden2{
     display: none;
 }
+
+
+@media only screen and (min-device-width: 120px) and (max-device-width: 319px){
+   .topbar p:nth-child(1),.topbar p:nth-child(2){
+        display: none;
+    }
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 576px){
     .menu-toggle{
         display: flex;
@@ -3084,7 +3094,9 @@ color: var(--primaryColor);
     .topbar .net-work a:last-child{
         margin-right: 0;
     }
-    .topbar p:nth-child(1),.topbar p:nth-child(2),.topbar p:nth-child(3){
+
+
+    .topbar p:nth-child(1),.topbar p:nth-child(2){
         display: none;
     }
     .topbar .net-work::before {
@@ -3138,21 +3150,22 @@ color: var(--primaryColor);
     .block_1 .card h4{
         font-size: 19px;
     }
-    .bunia-navbar {
+    .buania-navbar {
+        z-index: 100;
         background-color: rgb(255, 255, 255);
         color: #000000;
-        padding-right: 50px !important;
-        margin-right: 70px !important;
+        padding-left: 15px ;
+        border-radius: 15px;
+        height: 100%;
+    }
+    #closeClick{
+        display: inline;
+    }
+    .buania-color{
+        color: #970803;
     }
 
-    /* .allume{
-        display: block;
-    }
-
-    .eteindre{
-        display: none;
-    } */
-    /* .bunia-navbar-img{
+    /* .buania-navbar-img{
         position: absolute;
         top: 0;
         left: 0;
@@ -3335,6 +3348,39 @@ color: var(--primaryColor);
     }
 }
 @media only screen and (min-device-width: 577px) and (max-device-width:768px){
+
+    .buania-navbar {
+        z-index: 100;
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+        padding-left: 15px ;
+        border-radius: 15px;
+        height: 100%;
+    }
+    #closeClick{
+        display: inline;
+    }
+    .buania-color{
+        color: #970803;
+    }
+
+    /* .buania-navbar-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
+    .about-text {
+
+    margin-left: 0px;
+    border-left-width: 15px;
+    right: 50px;
+    left: 30px;
+    margin-right: 50px;
+    border-right-width: 50px;
+    padding-right: 60px;
+
+    }
+
     .menu-toggle{
         display: flex;
     }
@@ -3463,6 +3509,39 @@ color: var(--primaryColor);
     }
     .counter .text-star{
         width: auto;
+    }
+
+
+    .buania-navbar {
+        z-index: 100;
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+        padding-left: 15px ;
+        border-radius: 15px;
+        height: 100%;
+    }
+    #closeClick{
+        display: inline;
+    }
+    .buania-color{
+        color: #970803;
+    }
+
+    /* .buania-navbar-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
+    .about-text {
+
+    margin-left: 0px;
+    border-left-width: 15px;
+    right: 50px;
+    left: 30px;
+    margin-right: 50px;
+    border-right-width: 50px;
+    padding-right: 60px;
+
     }
     .counter h1{
         font-size: 35px;
