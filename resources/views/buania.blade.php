@@ -91,6 +91,8 @@ echo $homepage;
                  elemenIm = document.getElementById('buania-navbar-img');
                  var navbarMenu = document.getElementById('navbarSupportedContent');
                 navbarMenu.style.backgroundColor ='white';
+                navbarMenu.style.borderRadius ='15px';
+                navbarMenu.style.paddingLeft='20px';
                 elementlo.style.display = 'none';
                 elemenIm.style.display = 'none';
                 elemen.style.display = 'block';
