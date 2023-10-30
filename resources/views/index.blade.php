@@ -14,12 +14,12 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="" aria-current="true" aria-label="Slide 5"></button>
 
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div class="carousel-inner ">
+                    <div class=" carousel-item  active">
                         <img src="assets/slides/1649335560.1644331708.agriculture.png" alt="">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 mx-5">
                                     <div class="text-white text-star">
                                         <h2></h2>
                                         <h1>@lang("public.caroussel-p11")</h1>
@@ -30,11 +30,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
+                    <div class="carousel-item  ">
                         <img src="assets/slides/1649335612.1644385541.mine et hydrocarbure 2.jpg" alt="">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 mx-5">
                                     <div class="text-white text-star">
                                         <h2></h2>
                                         <h1>@lang("public.caroussel-p21")</h1>
@@ -45,11 +45,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
+                    <div class="carousel-item  ">
                         <img src="assets/slides/1649335649.1644386774.Infrastructures 1.jpg" alt="">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 mx-5">
                                     <div class="text-white text-star">
                                         <h2></h2>
                                         <h1>@lang("public.caroussel-p31")</h1>
@@ -60,11 +60,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
+                    <div class="carousel-item  ">
                         <img src="assets/slides/1649335698.1644391214.Banques finance et assurance.png" alt="">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 mx-5">
                                     <div class="text-white text-star">
                                         <h2></h2>
                                         <h1>@lang("public.caroussel-p41")</h1>
@@ -75,11 +75,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
+                    <div class="carousel-item  ">
                         <img src="assets/slides/1649335748.1644395887.contentieux-et-arbitrage-2.png" alt="">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 mx-5">
                                     <div class="text-white text-star">
                                         <h2></h2>
                                         <h1>@lang("public.caroussel-p51")</h1>
@@ -242,7 +242,7 @@
                             $chunks = collect($accueil_data["publications"])->chunk(3);
                           @endphp
                           @foreach ($chunks as $chunk)
-                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                            <div class="carousel-item  {{ $loop->first ? 'active' : '' }}">
                               <div class="row">
                                 @foreach ($chunk as $publication)
                                   <div class="col-md-4">

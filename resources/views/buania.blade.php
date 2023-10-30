@@ -55,9 +55,9 @@ echo $homepage;
             <p class="mb-0" style="opacity: .5;">Copyright © Pathy Liongo & Associates 2023</p>
             <p class="mb-0" style="font-size: 14px;">
                 <small>Designed By
-                    <a href="https://www.silasmas.com/" target="_blank">Siladev</a>
+                    <a href="https://www.silasmas.com/" target="_blank"><span class="text-danger" >Siladev</span></a>
                     Renew By
-                    <a href="https://www.buania.net/" target="_blank">Buania</a>
+                    <a href="https://www.buania.net/" target="_blank"><span class="text-danger" >Buania</span></a>
                 </small>
             </p>
         </div>
