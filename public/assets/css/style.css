@@ -691,7 +691,7 @@ a{
     width: 1px;
     height: 50%;
     background: var(--primaryColorDarken);
-    right: 33px;
+    right: -33px;
     top: 0;
     border-radius: 5px;
 }
@@ -703,7 +703,7 @@ a{
     border-radius: 100%;
     border: 2px solid var(--secondayColor);
     border-top: 5px solid transparent;
-    right: 15px;
+    right: -50px;
     top: 50%;
 }
 

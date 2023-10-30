@@ -17,7 +17,6 @@ class BuaniaController extends Controller
             "message"=>$request->message,
             "email"=>$request->email
         ];
-
         $responseContact = Http::post($apiExterne.'contact',$contact);
 
         $url_fichier=env('API_EXTERNE_HOST').'assets/img/avocats/';
@@ -27,7 +26,6 @@ class BuaniaController extends Controller
 
         $response = Http::get($apiExterne.'home');
 
-       // dd($response);
         $accueil_data = $response->json();
         $currentLocale = App::getLocale();
 

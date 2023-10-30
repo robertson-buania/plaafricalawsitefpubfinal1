@@ -221,6 +221,7 @@
 
                                     </span>
                                     @if ($avocat['cv'])
+
                                     <a href="{{route('avocat.cv',['pdfUrl' =>$avocat['cv']])}}" class="btn-download"><i class="fas fa-download"></i> @lang("public.downlaod") CV</a>
                                     @endif
 

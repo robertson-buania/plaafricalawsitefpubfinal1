@@ -11,7 +11,7 @@
         <div class="container">
 
 
-            <div class="d-flex experti justify-content-between align-items-center  " >
+            <div class="d-flex experti justify-content-between align-items-start  " >
                 <div class="col-lg-6 card-buania   expertise-1">
 
                     <div class="text-start ">

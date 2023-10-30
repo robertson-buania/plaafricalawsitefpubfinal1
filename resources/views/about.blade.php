@@ -36,7 +36,7 @@
                     <div class="temBox">
                         <div class=" card-buania">
                             <img src="assets/about/webpconverter/DSC_7787.webp" alt="img">
-                            <div class="block-badge">
+                            <div class="block-badge mt-5">
 
                                 <span>@lang("public.more then")</span>
                                 <span> <strong>10</strong> @lang('public.years') @lang("public.of")</span>
